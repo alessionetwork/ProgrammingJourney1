@@ -1,0 +1,27 @@
+main.cpp :
+#include
+#include "fns.hpp"
+int tamano;
+int main() {
+std::cout << "How much is your platano?\n";
+std::cin >> tamano;
+mamahuevo(tamano);
+}
+
+fns.hpp :
+#include
+int mamahuevo(int tamano);
+
+fns.cpp :
+#include
+int mamahuevo(int tamano) {
+
+if (tamano > 15) {
+std::cout<< "MAMAHUEVO ESO ES UN ARMA!\n";
+}
+else { std::cout << "No es el tamano, es como lo usas\n";
+}
+}
+
+///Output explained :
+///If you type a number lower than 15 when the machine asks you, then it till output "No es el tamano, es como lo usas", but if you type a number bigger than 15, congrats, it will type "MAMAHUEVO ESO ES UN ARMA!" .
