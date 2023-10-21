@@ -1,0 +1,29 @@
+Let’s try a challenging problem that will put all your brain cells to the test.
+
+Write a leap_year.cpp program that:
+
+Takes a year as input.
+Checks to see if the year is a four-digit number.
+Displays whether or not the year falls on a leap year.
+There are 3 criteria that must be taken into account to identify a leap year:
+
+If the year can be evenly divided by 4 then it is a leap year, however…
+
+If that year is evenly divisible by 400, then it is a leap year.
+
+#include
+
+int main() {
+int year;
+std::cout << "Write any year you want\n ";
+std::cin >> year;
+if (year >999 && year < 10000) {
+std::cout << "The year you gave me has 4 digits\n";
+}
+if (year % 4 ==0 or year % 400 ==0 ) {
+std::cout << "The year you gave me is a leap year.\n";
+}
+else {
+std::cout << "The year you gave me isn't a leap year.\n";
+}
+}
