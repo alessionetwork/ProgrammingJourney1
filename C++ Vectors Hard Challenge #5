@@ -1,0 +1,28 @@
+///Write a program to find the sum of even numbers and the product of odd numbers in a vector.
+///For example:
+///Suppose we have a vector that is {2, 4, 3, 6, 1, 9}.
+///Then the program should output:
+///Sum of even numbers is 12
+///Product of odd numbers is 27
+
+#include <iostream>
+#include <vector>
+
+int main() {
+std::vector nums = {10,15,88,97,104};
+int even_sum=0;
+int odd_product=1;
+for (int i=0; i < nums.size(); i++) {
+if (nums[i] % 2==0) {
+even_sum = even_sum + nums[i];
+}
+else if (nums[i] % 2 ==1) {
+odd_product = odd_product * nums[i];
+}
+}
+std::cout << "The Sum of even numbers is " <<even_sum << "\n";
+std::cout << "The Product of odd numbers is " <<odd_product << "\n";
+}
+
+///Output : The Sum of even numbers is 202
+///The Product of odd numbers is 1455
