@@ -1,0 +1,56 @@
+C++ Boxing Belts Challenge#1
+Item statusDraft
+alessionetwork opened 2 weeks ago
+Description
+alessionetwork
+2 weeks ago (edited)
+Little Mac is an interplanetary space boxer, who is trying to win championship belts for various weight categories on other planets within the solar system.
+
+#include
+
+int main() {
+std::cout << "Hey Little Mac, I will help you win the championship belts for various belts categories.\n What is your earth weight in kilos?\n";
+int weight;
+std::cin >> weight;
+std::cout << "In what planet do you want to fight?\n";
+int choice;
+std::cin >> choice;
+
+double weight1 = weight * 0.38;
+double weight2 = weight * 0.91;
+double weight3 = weight * 0.38;
+double weight4 = weight * 2.34;
+double weight5 = weight * 1.06;
+double weight6 = weight * 0.92;
+double weight7 = weight * 1.19;
+
+if (choice==1) {
+
+std::cout << "Your weight for this planet is "<<weight1<<"\n";
+}
+else if (choice==2) {
+
+std::cout << "Your weight for this planet is "<<weight2<<"\n";
+}
+else if (choice==3) {
+
+std::cout << "Your weight for this planet is "<<weight3<<"\n";
+}
+else if (choice==4) {
+
+std::cout << "Your weight for this planet is "<<weight4<<"\n";
+}
+else if (choice==5) {
+
+std::cout << "Your weight for this planet is "<<weight5<<"\n";
+}
+else if (choice==6) {
+
+std::cout << "Your weight for this planet is "<<weight6<<"\n";
+}
+else if (choice==7) {
+
+std::cout << "Your weight for this planet is "<<weight7<<"\n";
+}
+
+}
